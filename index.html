@@ -3,6 +3,9 @@
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShedBuilds</title>
     <style>
@@ -35,7 +38,7 @@
             margin: 10px auto;
             padding: 12px 20px;
             width: 250px;
-            background-color: #e60012;
+            background-color: #f5a623;
             color: white;
             text-decoration: none;
             border-radius: 8px;
@@ -43,10 +46,14 @@
             transition: 0.3s;
         }
         .links a:hover {
-            background-color: #ff1c33;
+            background-color: #ffb347;
         }
         .footer {
             margin-top: 40px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -55,7 +62,7 @@
         <img src="https://scontent.fvno7-1.fna.fbcdn.net/v/t1.6435-9/165437037_124934966308282_2490133898760760888_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=m5EwyELfCd4Q7kNvwFXpasu&_nc_oc=AdlrlZ3ceYibblc7v9dkayq0o-oAirDPcg1vuflV4Xh2WvjXpXWI7snLahubrOtNUns&_nc_zt=23&_nc_ht=scontent.fvno7-1.fna&_nc_gid=NG6yp33m_kUAYU0DaU0hiw&oh=00_AfGLv6ZhDEnU3vRWCNUuzkisf-LyLBqz7DdLE1RLL7D5qg&oe=68202A30" alt="ShedBuilds logotipas">
     </header>
     <div class="content">
-        <p><strong>ShedBuilds</strong> – tai automobilių entuziastų projektas, kuriame dalijamasi garažiniais darbais, projektų eiga ir techniniais sprendimais. Prisijunk prie bendruomenės!</p>
+        <p><strong>ShedBuilds</strong> – tai automobilių entuziastų projektas, kuriame dalijamasi darbais, projektų eiga ir techniniais sprendimais. Prisijunk prie bendruomenės!</p>
         <div class="links">
             <a href="https://www.facebook.com/ShedBuilds/?locale=lt_LT" target="_blank">Facebook</a>
             <a href="https://www.youtube.com/shedbuilds" target="_blank">YouTube</a>
@@ -65,5 +72,14 @@
             <a href="https://goltasEU.github.io/noriuNFC" target="_blank">Nori tokio pakabuko savo įmonei? Užsisakyk čia</a>
         </div>
     </div>
-</body>
+
+    <script>
+    // Vienkartinis puslapio atnaujinimas
+    if (!sessionStorage.getItem('reloaded')) {
+      sessionStorage.setItem('reloaded', 'true');
+      window.location.reload(true);
+    }
+    </script>
+    </body>
+    
 </html>
