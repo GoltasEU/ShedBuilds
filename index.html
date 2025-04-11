@@ -67,7 +67,7 @@
             <a href="https://www.youtube.com/shedbuilds" target="_blank">YouTube</a>
             <a href="https://www.instagram.com/shed.builds/" target="_blank">Instagram</a>
             <a href="https://www.facebook.com/ShedBuilds/?locale=lt_LT" target="_blank">Facebook</a>
-            <a href="mailto:nerijus@shedbuilds.com">El. paštas</a>
+            <span id="shedbuilds-email"></span>
     
         </div>
         <div class="footer">
@@ -82,6 +82,13 @@
       window.location.reload(true);
     }
     </script>
-    </body>
+    
+<script>
+  const sbUser = "nerijus";
+  const sbDomain = "shedbuilds.com";
+  document.getElementById("shedbuilds-email").innerHTML =
+    '<a href="mailto:' + sbUser + '@' + sbDomain + '">El. paštas</a>';
+</script>
+</body>
     
 </html>
